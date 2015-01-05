@@ -1,0 +1,17 @@
+<div class="metro-group-editable">
+	<div contenteditable="{{group.title.editable}}" ng-style="groupwidth" class="metro-group-title" ng-bind="group.title.text">
+	</div>
+	<!-- <i>&times;</i> -->
+</div>
+	<div class="gridster">
+		<ul ng-style="groupwidth">
+			<li 
+			data-row="{{tile.r}}" 
+			data-col="{{tile.c}}" 
+			data-sizex="{{tile.x}}" 
+			data-sizey="{{tile.y}}" 
+			class="gs_w" 
+			ng-repeat="tile in group.tiles"
+			ng-click="childer(tile, tile.text)">{{tile.text}}</li>
+		</ul>
+	</div>

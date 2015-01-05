@@ -1,0 +1,14 @@
+<!-- <ul class="metro-list-view-item">
+	{{mem}}asd
+	<li ng-repeat="(header, items) in mem">
+		{{header}}
+		<div ng-repeat="item in items" ng-click="childer(item, item.text)">
+			{{item.text}}
+		</div>
+	</li>
+</ul> -->
+<ul class="metro-list-view-item">
+	<li ng-repeat="item in list" class="metro-list-view-anim" ng-click="childer(item, item.text)">
+		{{item.text}}
+	</li>
+</ul>

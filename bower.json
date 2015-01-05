@@ -1,0 +1,15 @@
+{
+  "name": "metro",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-animate": null,
+    "angular-local-storage": null,
+    "angular-sanitize": null,
+    "gridster": null,
+    "jquery": null,
+    "velocity": null
+  },
+  "resolutions": {
+    "angular": null
+  }
+}

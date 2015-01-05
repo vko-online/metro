@@ -1,0 +1,11 @@
+<div id="metro-controls">
+	<button>username</button>
+	<button ng-click="searchboxReveal()">searchbox</button>
+</div>
+<div class="gridsterview" ng-style="{'background-image': 'url(' + conf.background + ')'}">
+	<ul>
+		<li ng-repeat="group in groups">
+			<metro-tile-group group="group"></metro-tile-group>
+		</li>
+	</ul>
+</div>
