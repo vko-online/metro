@@ -102,13 +102,18 @@ metro-tab{
 .metro-group-editable{
 	position: relative;
 }
-.metro-group-title{
+.metro-group-editable .metro-group-title{
 	display: inline-block;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	font-size: 1.3em;
 	color:#333;
+}
+.metro-group-editable .metro-group-title:focus{
+	overflow: auto;
+	white-space: nowrap;
+	text-overflow: clip;
 }
 .metro-group-editable>i{
 	visibility: hidden;
