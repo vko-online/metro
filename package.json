@@ -1,0 +1,12 @@
+{
+  "name": "metro",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-serve": "0.3.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
