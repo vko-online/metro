@@ -11,7 +11,7 @@ Todo
 - Animations Everywhere! with Staggering
 - Js `Row-Column-Height-Width-BgColor` generator algo
 - Clever input.search like in sublime
-- Have fun =)
+- Grab some beer and have fun =)
 
 The MIT License (MIT)
 
