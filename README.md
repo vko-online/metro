@@ -7,7 +7,12 @@ Project is still in development.
 
 Run `npm install && bower install && gulp`
 
-Todo
+##Prerequisites
+- Some backend for iframes(`string`) inside tiles
+- Be creative, make it better that Microsoft!
+- Be smart. Use sublime; just kidding
+
+##Todo
 - Animations Everywhere! with Staggering
 - Js `Row-Column-Height-Width-BgColor` generator algo
 - Clever input.search like in sublime
