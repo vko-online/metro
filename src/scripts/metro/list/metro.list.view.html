@@ -1,15 +1,10 @@
 <div id="metro-list-view-searchbox">
-<input type="text" ng-model="searchQuery" placeholder="Поиск" autofocus="true"></div>
-<div class="metro-list-view">
+	<input type="text" ng-model="searchQuery" placeholder="Поиск" autofocus="true">
+</div>
+<div class="metro-list-view" ng-style="{'background-image': 'url(' + conf.background + ')'}">
 	<ul class="metro-list-view-list">
 		<li ng-repeat="group in groups | squery:searchQuery" class="metro-list-view-anim">
-			<div class="metro-group-editable">
-				<div contenteditable="{{group.title.editable}}" class="metro-group-title" style="width: 278px;">
-					{{group.title.text}}
-				</div>
-				<!-- <i>&times;</i> -->
-			</div>
-			<metro-list-view-item list="group.tiles"></metro-list-view-item>
+			<metro-list-view-item list="group.tiles" list-title="group.title"></metro-list-view-item>
 		</li>
 	</ul>
 </div>

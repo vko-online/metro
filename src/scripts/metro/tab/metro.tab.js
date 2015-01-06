@@ -6,7 +6,7 @@
 		'metro.tile.view',
 		'metro.animation',
         'metro.engine'
-		]);
+        ]);
 
 	angular.module('metro.tab').directive('metroTab', function($hscroll, $metroEngine){
 		return{
@@ -16,7 +16,6 @@
 				$scope.tileactive = true;
                 $scope.searchbox = false;
                 document.body.onkeydown = function(kk){
-
                     $scope.$apply(function(){
                         $scope.toggleKey(kk);
                     });
@@ -32,23 +31,23 @@
                         $scope.searchbox = false;
                     }
                 }
-				$scope.toggle = function(){
-					$scope.tileactive = !$scope.tileactive;
-				};
-                $metroEngine.GetTiles().then(function(response){
-                    $scope.groups = response.data;
-                });
+                $scope.toggle = function(){
+                 $scope.tileactive = !$scope.tileactive;
+             };
+             $metroEngine.GetTiles().then(function(response){
+                $scope.groups = response.data;
+            });
 				//activate horScroll
 				//$hscroll.activate(elem[0]);
-             }
          }
+    }
 
-     });
+});
 
 angular.module('metro.tab').animation('.metro-tab-anim', function($velocity){
 
     var enterAnim = {
-        'margin-left': '-100px',
+        'margin-left': '300px',
         opacity: 0
     };
     return{
@@ -61,17 +60,19 @@ angular.module('metro.tab').animation('.metro-tab-anim', function($velocity){
             }, {
                 easing: 'easeInOut',
                 duration: 150,
+                queue: false,
                 complete: done
             });
         },
         leave: function(element, done){
             var elem = element[0];
             $velocity(element, {
-                'margin-left': '-' + elem.offsetWidth +'px',
+                'margin-left': elem.offsetWidth +'px',
                 opacity: 0
             }, {
                 easing: 'easeOutCirc',
                 duration: 150,
+                queue: false,
                 complete: done
             });
         }

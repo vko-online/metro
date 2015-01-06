@@ -4,8 +4,9 @@
 	angular.module('metro', [
 //'ngAnimate', 'LocalStorageModule', 'ngSanitize'
 			'metro.tab'
-		]);
-
+		]).config(function($metroProvider){
+			$metroProvider.defaults.conf.animation.dirty = true;
+		});
 	//Implements: 
 	// 1. Metro-tabs - multiple views on single page
 	// 2. Metro-tile-view - resizable(Gridster.js), draggable(Gridster.js+), serializable(Gridster.js), animatable(Velocity.js+), tile-list-toggle(imp+)

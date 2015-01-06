@@ -1,14 +1,15 @@
-<!-- <ul class="metro-list-view-item">
-	{{mem}}asd
-	<li ng-repeat="(header, items) in mem">
-		{{header}}
-		<div ng-repeat="item in items" ng-click="childer(item, item.text)">
-			{{item.text}}
+<ul class="metro-list-view-item" col-width="list">
+	<div class="metro-group-editable" ng-if="listTitle">
+		<div contenteditable="{{listTitle.editable}}" class="metro-group-title">
+			{{listTitle.text}}
 		</div>
-	</li>
-</ul> -->
-<ul class="metro-list-view-item">
-	<li ng-repeat="item in list" class="metro-list-view-anim" ng-click="childer(item, item.text)">
-		{{item.text}}
+		<!-- <i>&times;</i> -->
+	</div>
+	<li ng-repeat="item in list" class="metro-list-view-anim" ng-click="childer(item, listTitle.text)">
+		<div ng-style="{'background-color': item.b}"><i class="fa fa-{{item.i}}"></i>
+		</div> 
+		<label>
+			{{item.text}}
+		</label>
 	</li>
 </ul>

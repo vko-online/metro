@@ -2,31 +2,51 @@
 	'use strict';
 
 	angular.module('metro.list.view', [
-		'ngAnimate',
-		'metro.hscroll',
-		'metro.animation'
+			'ngAnimate',
+			'metro.hscroll',
+			'metro.animation'
 		]);
 
-	angular.module('metro.list.view').directive('metroListView', function(){
+	angular.module('metro.list.view').directive('metroListView', function($velocity, $metro){
 		return{
 			restrict: 'EA',
 			scope: {
-				groups: '=view' 
+				groups: '=view'
 			},
 			templateUrl: 'scripts/metro/list/metro.list.view.html',
 			link: function($scope, elem, attr){
+				$scope.conf = {
+					background: $metro.views.tile.background
+				}
+				// $velocity(document.querySelector('metro-tab'), "transition.slideRightIn");
 
 			}
 		}
 	});
-	angular.module('metro.list.view').directive('metroListViewItem', function($compile, $q){
+	angular.module('metro.list.view').directive('colWidth', function(){
+		return{
+			restrict: 'EA',
+			scope:{
+				colWidth: '='
+			},
+			link: function($scope, elem, attr){
+				elem.css({
+					width: Math.ceil($scope.colWidth.length / 8) * 288 + 'px'
+				});
+			}
+		}
+	})
+	angular.module('metro.list.view').directive('metroListViewItem', function($compile, $q, $velocity){
 		return{
 			restrict: 'EA',
 			scope: {
-				list: '=' 
+				list: '=',
+				listTitle: '=?'
 			},
 			templateUrl: 'scripts/metro/list/metro.list.view.item.html',
 			link: function($scope, elem, attr){
+
+				// $velocity(elem, "transition.slideRightIn");
 				var aggregator = function(arr){
 					var defer = $q.defer();
 					defer.resolve(function(){
@@ -44,17 +64,19 @@
 					return defer.promise;
 				}
 				//wtf-bug ! $scope.mem === []
-				aggregator($scope.list).then(function(data){
+				aggregator($scope.list.tiles).then(function(data){
 					$scope.mem = data;
 				});
 				$scope.childer = function(item, text){
 					if(item.child){
 						$scope.item = {
 							child: item.child,
-							text: text
+							text: text || item.text
 						};
 						elem.html('<button ng-click="childerRevert()" class="backer-btn">{{"< "+ item.text}}</button><metro-list-view-item list="item.child"></metro-list-view-item>');
 						$compile(elem.contents())($scope);
+					} else {
+						alert(item.text || text);
 					}
 				}
 				$scope.childerRevert = function(){

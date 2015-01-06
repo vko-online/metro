@@ -7,7 +7,8 @@
     "angular-sanitize": null,
     "gridster": null,
     "jquery": null,
-    "velocity": null
+    "velocity": null,
+    "fontawesome": null
   },
   "resolutions": {
     "angular": null
