@@ -24,6 +24,7 @@ Run `npm install && bower install && gulp`
 - Green potatoes ![sweetie](http://imdocuk.com/content/5/0/7/15077/93620808carre_photo_dossier.jpg)
 
 ##Todo
+- Better engine, Much better And PoWerRFullL!
 - Animations Everywhere! with Staggering
 - Js `Row-Column-Height-Width-BgColor` generator algo
 - Clever input.search like in sublime
