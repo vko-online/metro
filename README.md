@@ -3,6 +3,8 @@ metro
 
 AngularJs Metro like in Windows 8 Metro
 
+![metro](https://lh4.googleusercontent.com/proxy/uPfCQYcvCKop5uxIX4dsp_D6cibATryeEiIvqwk_pW3AW4zuvZGCF-Ay0Sfnbh-PFLU4YZs22FD0cII40P0E4YT7hm90lnalQKhcuo1F=w426-h239-p)
+
 Project is still in development.
 
 Run `npm install && bower install && gulp`
@@ -11,6 +13,15 @@ Run `npm install && bower install && gulp`
 - Some backend for iframes(`string`) inside tiles
 - Be creative, make it better that Microsoft!
 - Be smart. Use sublime; just kidding
+
+##What we have
+- Lazy compilation, DOM stays clear - anti-overload
+- Keyboard shortcuts
+- Velocity.js animation
+- No routing! Single Powerfull directive
+- Tile format (needs clever rethink)
+- Deep child linking
+- Green potatoes ![sweetie](http://imdocuk.com/content/5/0/7/15077/93620808carre_photo_dossier.jpg)
 
 ##Todo
 - Animations Everywhere! with Staggering
