@@ -1,8 +1,9 @@
+'use strict';
+
 var gulp = require('gulp');
-var serve = require('gulp-serve');
 
+require('require-dir')('./gulp');
 
-gulp.task('default', serve({
-	root: ['src'],
-	port: 3009
-}));
+gulp.task('default', ['clean'], function () {
+    gulp.start('build');
+});
