@@ -1,0 +1,12 @@
+<ul class="gridster">
+	<li ng-repeat="tile in group.c" 
+			data-sizex="{{tile.x}}" 
+			data-sizey="{{tile.y}}" 
+			data-row="{{tile.r}}" 
+			data-col="{{tile.c}}" >
+		<metro-tile 
+			item="tile">
+		</metro-tile>
+	</li>
+</ul>
+

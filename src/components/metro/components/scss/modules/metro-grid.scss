@@ -1,0 +1,5 @@
+metro-grid, .metro-grid{
+	@include fill-parent;
+	@include display(inline-flex);
+	height: 450px;
+}

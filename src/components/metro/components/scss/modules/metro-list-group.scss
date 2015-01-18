@@ -1,0 +1,14 @@
+metro-list-group, .metro-list-group{
+	margin: 0px 30px;
+	.title{
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden
+	}
+	.items{
+		height:400px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}

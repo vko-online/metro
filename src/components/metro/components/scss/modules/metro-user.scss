@@ -1,0 +1,79 @@
+metro-user, .metro-user{
+	text-align:right;
+	@include flex(1);
+	
+	#__dropdown_list{
+		width: 0px;
+		-webkit-appearance: none;
+		border: none;
+		height: 0px;
+		&:focus + #__dropdown{
+			display: block;
+			@include animation(__dropdown_anim .5s ease-out);
+		}
+		&:focus + #__dropdown_list{
+			background:white;
+		}
+	}
+	#__dropdown {
+		color:black;
+		display: none;
+		width:250px;
+		float:right;
+		background-color: #eee;
+		outline: 2px solid black;
+		-webkit-transition: all 50ms ease-out;
+		clear: both;
+		&:hover{
+			display:block;
+		}
+		#__opt{
+			padding: 8px;
+		font-size: 80%;
+		cursor:default;
+		}
+	}
+	@include keyframes(__dropdown_anim) {
+	  0% {
+	    @include transform(translateY(-20px));
+	    opacity: 0;
+	  }
+	  50% {
+	    @include transform(translateY(-5px));
+	    opacity: 0.75
+	  }
+	  99% {
+	    @include transform(none);
+	    opacity: 1;
+	  }
+	}
+	#__metro-user {
+		width:250px;
+		font-size: 80%;
+		padding: 8px;
+		color: white;
+		float:right;
+		&:active{
+			background-color: white;
+			color: black;
+		}
+		&:hover{
+			background-color: rgba(255,255,255, 0.2);
+		}
+
+		#__metro-user-title{
+			display: inline-block;
+		}
+		#__metro-user-img{
+			font-size: 3em;
+			display: inline-block;
+			background: white;
+			vertical-align: bottom;
+			width: 65px;
+			height: 65px;
+			text-align: center;
+			color: black;
+		}
+		
+	}
+}

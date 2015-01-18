@@ -1,0 +1,17 @@
+metro-nav, .metro-nav{
+	color:white;
+	@include display(flex);
+	@include position(fixed, auto);
+	width: 100%;
+	padding: 30px 50px 0 100px;
+	font-weight: 100;
+
+	h1{
+		font-weight: inherit;
+	}
+	metro-user, .metro-user{
+		h3{
+			font-weight: inherit;
+		}
+	}
+}

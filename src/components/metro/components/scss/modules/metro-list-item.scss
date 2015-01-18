@@ -1,0 +1,27 @@
+metro-list-item, .metro-list-item{
+	display: flex;
+	margin: 5px;
+	width:150px;
+	height:40px;
+	width:200px;
+	&:hover{
+		outline: 2px solid gray;
+	}
+
+
+	.icon{
+		background:none;
+		height:40px;
+		width:40px;
+		font-size: 2em;
+text-align: center;
+	}
+	.title{
+		height:40px;
+		padding: 10px;
+		flex:1;
+		label{
+			vertical-align: middle;
+		}
+	}
+}
