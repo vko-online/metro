@@ -7,7 +7,7 @@ AngularJs Metro like in Windows 8 Metro
 
 Project is still in development.
 ##Want Demo??
-Run `git clone https://github.com/vko-online/metro.git && cd metro && npm install && bower install` then `gulp`
+Run `git clone https://github.com/vko-online/metro.git && cd metro && npm install && bower install gulp`
 
 ##Prerequisites
 - Some backend for iframes(`string`) inside tiles
