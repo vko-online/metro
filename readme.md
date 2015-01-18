@@ -29,7 +29,7 @@ Run `git clone https://github.com/vko-online/metro.git && cd metro && npm instal
 ##What we have
 - Lazy compilation, DOM stays clear - anti-overload
 - Keyboard shortcuts
-- Velocity.js animation
+- <s>Velocity.js</s> GSAP animation
 - No routing! Single Powerfull directive
 - Tile format (needs clever rethink)
 - Deep child linking
@@ -38,7 +38,7 @@ Run `git clone https://github.com/vko-online/metro.git && cd metro && npm instal
 ##Todo
 - Better engine, Much better And PoWerRFullL!
 - Animations Everywhere! with Staggering
-- Js `Row-Column-Height-Width-BgColor` generator algo
+- <s>Js `Row-Column-Height-Width-BgColor` generator algo</s>
 - Clever input.search like in sublime
 - Grab some beer and have fun =)
 
