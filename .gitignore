@@ -3,3 +3,6 @@ node_modules/
 dist/
 src/components/metro/components/scss/plugins/neat
 src/components/metro/components/scss/plugins/bourbon
+.sass-cache/
+.tmp/
+sublime_fx/
