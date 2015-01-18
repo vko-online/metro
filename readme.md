@@ -5,6 +5,18 @@ AngularJs Metro like in Windows 8 Metro
 
 ![metro](https://lh4.googleusercontent.com/proxy/uPfCQYcvCKop5uxIX4dsp_D6cibATryeEiIvqwk_pW3AW4zuvZGCF-Ay0Sfnbh-PFLU4YZs22FD0cII40P0E4YT7hm90lnalQKhcuo1F=w426-h239-p)
 
+##New release - metro v2
+Now project includes Bourbon, Neat, GSAP, randomColor, fontawesome, gridster, modernizr. Why?
+First version was for presentation, now boss says he likes it, and wants it to be better. 
+
+##Why should i use it?
+- Simple directive `<metro></metro>`, soon will be available for old browsers as `<div metro></div>`
+- Fully customizable, althought it will be much like Windows 8 Metro, it will have many customization options. Directives were separated, so each has own template, which can be easily modified in `src/components/metro/components/src/modules` folder
+- SASS support, with Bourbon it gets really joy to customize
+- Minimum requirements, backend only might have tiny models for tile. Requires only `title`,`dynamic`,`icon`,`html`(or `iframe src`) and that's all. Other options are self assignable.
+- Also tiles can have child tiles, really deep nesting.
+
+
 Project is still in development.
 ##Want Demo??
 Run `git clone https://github.com/vko-online/metro.git && cd metro && npm install && bower install gulp`
